@@ -33,7 +33,7 @@ Logs are collected using Azure Monitor Agent, enriched using PowerShell scripts 
 
 # Data Flow
 
-![Data Flow](architecture/data-flow.png)
+![Data Flow](architecture/data-flow1.png)
 
 ---
 
@@ -79,7 +79,7 @@ SecurityEvent
 
 ## Query
 
-![Dashboard](screenshots/Query.png)
+![Query](screenshots/Query.png)
 
 ---
 
