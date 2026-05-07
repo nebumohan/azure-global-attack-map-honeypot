@@ -1,0 +1,9 @@
+// Detection Rule: High Volume Brute Force Attempt
+// Identifies an IP attacking multiple times within a 1-hour window
+
+FAILED_RDP_WITH_GEO_CL
+| extend Timestamp = todatetime(timestamp)
+| summarize Failed_Attempts = count() by sourcehost, country, bin(Timestamp, 1h)
+| where Failed_Attempts > 50
+| project Timestamp, sourcehost, country, Failed_Attempts
+| sort by Failed_Attempts desc
