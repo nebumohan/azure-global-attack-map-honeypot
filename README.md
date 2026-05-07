@@ -75,11 +75,11 @@ SecurityEvent
 
 ## Global Attack Map
 
-![Attack Map](screenshots/sentinel-map.png)
+![Attack Map](screenshots/map.png)
 
-## Dashboard
+## Query
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Query.png)
 
 ---
 
